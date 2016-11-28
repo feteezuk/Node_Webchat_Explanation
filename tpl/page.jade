@@ -1,0 +1,15 @@
+doctype html
+html
+ head
+ title= "Web chat"
+ script(src='/chat.js')
+ script(src='/socket.io/socket.io.js')
+ body
+  #content(style='width: 480px; background-color: yellow; height: 350px; margin: 0 0 25px 0; border: solid 1px blue; overflow-y: scroll;')
+  .controls
+   | Name:
+   input#name(style='width:250px;')
+   br
+   | Message
+   input#field(style='width:330px;')
+   input#send(type='button', value='Send')
